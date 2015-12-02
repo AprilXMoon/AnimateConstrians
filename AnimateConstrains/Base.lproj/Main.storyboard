@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmK-Iz-9uq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CR-LD-yxO">
+                                        <rect key="frame" x="283" y="24" width="34" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.9420361223" green="1" blue="0.7577090782" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2CR-LD-yxO" firstAttribute="centerX" secondItem="rmK-Iz-9uq" secondAttribute="centerX" id="5Mu-0S-bZP"/>
+                                    <constraint firstAttribute="height" constant="70" id="Anc-Eg-3Bh"/>
+                                    <constraint firstItem="2CR-LD-yxO" firstAttribute="centerY" secondItem="rmK-Iz-9uq" secondAttribute="centerY" id="kHU-3c-J0G"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5n-3q-QOW">
+                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCC-2a-Jcr">
+                                        <rect key="frame" x="250" y="32" width="101" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Hide Title view"/>
+                                        <connections>
+                                            <action selector="hideTitleViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7K-mk-RGe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwa-V4-eBZ">
+                                        <rect key="frame" x="248" y="87" width="105" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="show Title view"/>
+                                        <connections>
+                                            <action selector="showTitleViewButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i44-bH-u7T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xCC-2a-Jcr" firstAttribute="centerX" secondItem="n5n-3q-QOW" secondAttribute="centerX" id="GRS-SJ-5CA"/>
+                                    <constraint firstItem="Zwa-V4-eBZ" firstAttribute="top" secondItem="xCC-2a-Jcr" secondAttribute="bottom" constant="25" id="LT9-gQ-QZM"/>
+                                    <constraint firstItem="Zwa-V4-eBZ" firstAttribute="centerX" secondItem="n5n-3q-QOW" secondAttribute="centerX" id="a0r-Sq-Ws3"/>
+                                    <constraint firstItem="xCC-2a-Jcr" firstAttribute="top" secondItem="n5n-3q-QOW" secondAttribute="top" constant="32" id="cWZ-WO-AJy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n5n-3q-QOW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9OJ-eA-PIb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n5n-3q-QOW" secondAttribute="bottom" id="K30-qe-0Om"/>
+                            <constraint firstItem="n5n-3q-QOW" firstAttribute="top" secondItem="rmK-Iz-9uq" secondAttribute="bottom" id="hqV-yB-AwL"/>
+                            <constraint firstAttribute="trailing" secondItem="rmK-Iz-9uq" secondAttribute="trailing" id="ibT-sl-HgO"/>
+                            <constraint firstItem="rmK-Iz-9uq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rGh-Cm-dbY"/>
+                            <constraint firstAttribute="trailing" secondItem="n5n-3q-QOW" secondAttribute="trailing" id="wiN-aL-c53"/>
+                            <constraint firstItem="rmK-Iz-9uq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zk8-vb-hpg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="n5n-3q-QOW" id="NEY-P9-mVE"/>
+                        <outlet property="titleView" destination="rmK-Iz-9uq" id="Heu-af-NXs"/>
+                        <outlet property="titleViewTopConstraint" destination="rGh-Cm-dbY" id="EX1-hc-gq2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="500" y="479"/>
+        </scene>
+    </scenes>
+</document>
